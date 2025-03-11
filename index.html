@@ -7,10 +7,92 @@
 
 </head>
 <body>
+    
 
 
-    <h1>teste</h1>
-    <form action="https://www.w3schools.com/action_page.php"></form>
+    <form action="https://www.w3schools.com/action_page.php">
+
+        <fieldset>
+        <label for="fname">Data:</label><br>
+        <input type="date" id="data" name="data"><br><br>
+        </fieldset> 
+
+        <fieldset>
+        <legend>Dados de acesso</legend>
+        <label for="user">Usuario:</label><br>
+        <input type="text" id="user" name="user"> <br>
+        <label for="senha">Senha:</label><br>
+        <input type="text" id="senha" nome="senha">
+        </fieldset>
+
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"> <br>
+        <label for="Endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco"> <br>
+        <label for="Numero">Numero:</label><br>
+        <input type="text" id="numero" name="numero"> <br>
+        <label for="complemento">Complemento:</label><br>
+        <input type="text" id="complemento" name="complemento"> <br>
+        <label for="cidade">Cidade:</label><br>
+        <input list="cidade" nome="cidade">
+        <datalist id="cidade">
+            <option value="Sorocaba">
+            <option value="Itu">
+            <option value="Votorantin">
+            <option value="Serra negra">
+        </datalist><br>
+        <label for="estado">Estado:</label><br>
+        <select id="estado" nome="estado">
+            <option value="SP">SP</option>
+            <option value="MG">MG</option>
+            <option value="RJ">RJ</option>
+            <option value="PR">PR</option>
+        </select><br>
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" name="cep"> <br><br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Gênero:</legend>
+        <input type="radio" id="Masculino" name="genero" value="Masculino" checked>
+        <label for="Masculino">Masculino</label><br>
+        <input type="radio" id="Feminino" name="genero" value="Feminino">
+        <label for="Feminino">Feminino</label><br>
+        <input type="radio" id="PF" name="genero" value="PF">
+        <label for="PF">Prefiro não falar</label>
+        <br><br>
+        </fieldset>  
+
+        <fieldset>
+        <legend>Curso</legend>
+        <input type="checkbox" id="ADS" name="ADS" value="ADS">
+        <label for="ADS"> ADS</label><br>
+        <input type="checkbox" id="jogos" name="jogos" value="jogos">
+        <label for="jogos"> jogos</label><br>
+        <input type="checkbox" id="GT" name="GT" value="GT">
+        <label for="GT"> Gestão de TI</label><br>
+        <input type="checkbox" id="BD" nome="BD" value="BD">
+        <label for="BD">Banco de Dados</label>
+        <br><br>
+        </fieldset>
+
+    <fieldset>
+    <legend>Modelo</legend>
+        <input type="radio" id="precensial" name="modelo" value="precensial" checked>
+        <label for="precensial">precensial</label><br>
+        <input type="radio" id="EAD" name="modelo" value="EAD">
+        <label for="EAD">EAD</label><br>
+        <input type="radio" id="SP" name="modelo" value="SP">
+        <label for="SP">Semi presencial</label>
+    </fieldset>
+
+
+     </form> 
+
+
+
 
 </body>
 </html>
